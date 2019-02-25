@@ -38,8 +38,16 @@ class City_test < Minitest::Test
 		c = City.new(0,0,'city',0)
 		c.add_neighbor(1)
 		mocked_random = Minitest::Mock.new("mocked random")
-		def mocked_random.rand; 1; end
-		mocked_random.expect :rand, 1
+
+                # Note that rand expects an argument.  rand() is not the same as rand(x)
+		def mocked_random.rand(x); 1; end
+                # Additionally stub is_a?(x) to always return true
+                def mocked_random.is_a?(x); true; end
+
+                # This is not necessary - it has already been stubbed out and we know it is
+                # going to be called (cyclomatic complexity of method is 1, easy to determine)
+                # so a regular ol' stub makes more sense
+		# mocked_random.expect :rand, 1
 		assert_equal(1,c.get_neighboring_city(mocked_random))
 		assert_mock(mocked_random)
 	end
