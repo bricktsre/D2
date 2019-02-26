@@ -13,8 +13,6 @@ class City
   # Adds a connection to a neighboring city
   # new_id should be a integer greater than zero
   def add_neighbor(new_id)
-    return nil unless new_id.is_a?(Integer) && new_id >= 0
-
     return nil if neighbors.include?(new_id)
 
     neighbors[neighbors.size] = new_id
@@ -24,8 +22,6 @@ class City
   # can return the id of city object method is called with
   # prng must be a valid Random object
   def get_neighboring_city(prng)
-    return nil unless prng.is_a?(Random)
-
     neighbors[prng.rand(neighbors.size)]
   end
 end
