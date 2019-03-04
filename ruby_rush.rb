@@ -1,10 +1,7 @@
 require_relative 'game'
 
-def check_arguments(args)
-  args.size == 3 && args[0].to_i && args[1].to_i > 0 && args[2].to_i > 0
-end
-
-if check_arguments(ARGV)
+c = Check.new
+if c.check_arguments(ARGV)
   @g = Game.new(ARGV[0].to_i, ARGV[1].to_i, ARGV[2].to_i)
   @g.run
 else

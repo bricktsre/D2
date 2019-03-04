@@ -13,7 +13,7 @@ class Miner
 
   # Increases the ruby counts by zero or more rubies
   # fake and real should be greater or equal to zero
-  def increase_rubies(fake, real)
+  def increase_rubies(real, fake)
     @fake_rubies += fake
     @rubies += real
   end
