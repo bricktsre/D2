@@ -3,45 +3,33 @@ require_relative 'city'
 
 class City_test < Minitest::Test
 	
-	# UNIT TESTS FOR METHOD add_neighbor(x)
-	# Equivalence classes:
-	# x = -infinity..-1 -> nothing happens(returns nil)
-	# x = 0....infinity -> x is added to the neighbors array
-	# x = (not a number) return nil and nothing happens
-	# x already in neighbors array it should not be added again
-	def test_add_positive_id
-		c = City.new(0,0,'city',0)
-		c.add_neighbor(1)
-		assert_includes(c.neighbors,0)
-		assert_includes(c.neighbors,1)
-	end
-
-	def test_add_string
-		c = City.new(0,0,'city',0)
-		c.add_neighbor('town')
-		assert_includes(c.neighbors,0)
-		assert_equal(1,c.neighbors.size)
-	end
-
-	def test_add_duplicate_neighbor
-		c = City.new(0,0,'city',0)
-		c.add_neighbor(0)
-		assert_includes(c.neighbors,0)
-		assert_equal(1,c.neighbors.size)
-	end
-	
 	# UNIT TESTS FOR METHOD get_neighboring_city(prng)
 	# Equivalence classes:
 	# prng = valid random object -> randomly returns a value from the neighbors array
-	# prng = not a valid random object -> returns nil
-	def test_get_city_valid_random
-		c = City.new(0,0,'city',0)
-		c.add_neighbor(1)
+	# Tests if successfully returns the first element of the city neighbors array
+	def test_get_city
+		c = City.new(0,0,'city',0,[1])
 		mocked_random = Minitest::Mock.new("mocked random")
-		def mocked_random.rand; 1; end
-		mocked_random.expect :rand, 1
+		def mocked_random.rand(x); 0; end
 		assert_equal(1,c.get_neighboring_city(mocked_random))
-		assert_mock(mocked_random)
 	end
 
+	# UNIT TESTS FOR METHOD get_rubies(prng)
+	# Equivalence classes:
+	# prng = valid random object -> returns an array of a random amount of rubies(with some constriants)
+	# Tests if returns valid array
+	def test_zero_rubies
+		c = City.new(1,1,'city',0,[])
+		mocked_random = Minitest::Mock.new("mocked random")
+		def mocked_random.rand(x); 0; end
+		assert_equal([0,0],c.get_rubies(mocked_random))
+	end
+
+	# Tests if returns correct array with max rubies for city
+	def test_max_rubies
+		c = City.new(1,1,'city',0,[])
+		mocked_random = Minitest::Mock.new("mocked random")
+		def mocked_random.rand(x); 1; end
+		assert_equal([1,1],c.get_rubies(mocked_random))
+	end
 end

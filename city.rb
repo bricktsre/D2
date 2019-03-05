@@ -2,30 +2,28 @@
 class City
   attr_reader :neighbors, :max_rubies, :max_fake_rubies, :name, :id
 
-  def initialize(mxr, mxfr, name, id)
+  def initialize(mxr, mxfr, name, id, neighbors)
     @max_rubies = mxr
     @max_fake_rubies = mxfr
     @name = name
     @id = id
-    @neighbors = [0]
-  end
-
-  # Adds a connection to a neighboring city
-  # new_id should be a integer greater than zero
-  def add_neighbor(new_id)
-    return nil unless new_id.is_a?(Integer) && new_id >= 0
-
-    return nil if neighbors.include?(new_id)
-
-    neighbors[neighbors.size] = new_id
+    @neighbors = neighbors
   end
 
   # Returns an id of a nieghboring city
   # can return the id of city object method is called with
   # prng must be a valid Random object
   def get_neighboring_city(prng)
-    return nil unless prng.is_a?(Random)
-
     neighbors[prng.rand(neighbors.size)]
+  end
+
+  # Returns an array of rubies and fake rubies
+  # Rubies and fake rubies are randomly generated
+  # between 0 and the max for the city
+  def get_rubies(prng)
+    rubies = [2]
+    rubies[0] = prng.rand(@max_rubies + 1)
+    rubies[1] = prng.rand(@max_fake_rubies + 1)
+    rubies
   end
 end
