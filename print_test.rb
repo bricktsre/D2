@@ -6,18 +6,27 @@ class Print_test < Minitest::Test
 	# UNIT TESTS FOR METHOD one_type_is_zero?(x)
 	# Succes Cases: if x[0] or x[1] is zero
 	# Failure Cases: x[0] and x[1] are not both not zero
-	# Tests if returns true if one is zero
+	# 		 x[0] and x[1] are both zero
+	# Tests if returns true if one element is zero
 	def test_one_element_is_zero
 		p = Print.new
 		assert(p.one_type_is_zero?([1,0]))
 	end
 	
-	# Tests if returns false if both are not zero
+	# Tests if returns false if both elements are not zero
 	def test_neither_element_is_zero
 		p = Print.new
 		refute(p.one_type_is_zero?([1,1]))
 	end
 
+	# Tests if returns false if both elements of the array
+	# are zero
+	# EDGE CASE
+	def test_both_are_zero
+		p = Print.new
+		refute(p.one_type_is_zero?([0,0]))
+	end
+	
 	# UNIT TESTS FOR METHOD print_one_type(x, y)
 	# Equivalence classes:
 	# x[1] = 0 -> prints ruby or rubies found at city y
@@ -107,7 +116,8 @@ class Print_test < Minitest::Test
 		assert_output("\tFound no rubies or fake rubies in Town.\n") {p.print_day([0,0],'Town')}
 	end
 	
-	# Tests if correctly prints found some of both types of x[0]>0 and x[1]>0
+	# Tests if correctly prints found some of both types when
+	# there is 1 ruby and 2 fake rubies
 	def test_print_some_both_types
 		p = Print.new
 		assert_output("\tFound 1 ruby and 2 fake rubies in Town.\n") {p.print_day([1,2],'Town')}
@@ -123,7 +133,7 @@ class Print_test < Minitest::Test
 	# Equivalence classes:
 	# x = 0 -> print 'Going home empty-handed.'
 	# x = 1..9 -> print 'Going home sad.'
-	# x = 10...infinity -> print 'Going home victorious.'
+	# x = 10..infinity -> print 'Going home victorious.'
 	# Tests if prints empty-handed if x is 0
 	def test_empty_handed
 		p = Print.new
@@ -135,8 +145,23 @@ class Print_test < Minitest::Test
 		p = Print.new
 		assert_output("Going home sad.\n") {p.print_game_win_or_lose(3)}
 	end
+
+	# Tests if prints sad if x is 1 which is an
+	# equivalence class boundary
+	def test_sad_low_end
+		p = Print.new
+		assert_output("Going home sad.\n") {p.print_game_win_or_lose(1)}
+	end
 	
-	# Tests if prints victorious if x is 10
+	# Tests if prints sad if x is 9 which is an
+	# equivalence class boundary
+	def test_sad_high_end
+		p = Print.new
+		assert_output("Going home sad.\n") {p.print_game_win_or_lose(9)}
+	end
+	
+	# Tests if prints victorious if x is 10 which is an
+	# equivalence class boundary
 	def test_barely_victorious
 		p = Print.new
 		assert_output("Going home victorious!\n") {p.print_game_win_or_lose(10)}
@@ -150,10 +175,17 @@ class Print_test < Minitest::Test
 
 	# UNIT TESTS FOR METHOD print_trip(x)
  	# prints out results of miner's trip
-	# Tests if prints out correctly
-        def test_trip
+	# Tests if prints out correctly when rubies = 5 and fake rubies = 7
+	# should print Going home sad as well
+        def test_trip_plural_both_types
                 p = Print.new
                 assert_output("After 23 days, Rubyist 1 found:\n\t5 rubies.\n\t7 fake rubies.\nGoing home sad.\n") {p.print_trip([5,7],23,1)}
         end
-
+        
+	# Tests if print correctly when rubies = 10 and fake rubies = 1
+	# should print out that plus going home victorious!
+	def test_trip_plural_rubies_singular_fakes
+                p = Print.new
+                assert_output("After 1 days, Rubyist 2 found:\n\t10 rubies.\n\t1 fake ruby.\nGoing home victorious!\n") {p.print_trip([10,1],1,2)}
+        end
 end

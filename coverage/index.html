@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2019-03-04T23:10:59-05:00">2019-03-04T23:10:59-05:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2019-03-04T23:44:09-05:00">2019-03-04T23:44:09-05:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">98.01%</span></span>
+    (<span class="covered_percent"><span class="green">97.78%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.35
+         2.36
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>10</b> files in total.
-    <b>302</b> relevant lines. 
-    <span class="green"><b>296</b> lines covered</span> and
-    <span class="red"><b>6</b> lines missed </span>
+    <b>315</b> relevant lines. 
+    <span class="green"><b>308</b> lines covered</span> and
+    <span class="red"><b>7</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -92,11 +92,11 @@
       
       <tr>
         <td class="strong"><a href="#acf475330929b01127134568350fdbfe1c7bfb1f" class="src_link" title="game.rb">game.rb</a></td>
-        <td class="yellow strong">86.67 %</td>
-        <td>73</td>
-        <td>45</td>
+        <td class="yellow strong">84.78 %</td>
+        <td>74</td>
+        <td>46</td>
         <td>39</td>
-        <td>6</td>
+        <td>7</td>
         <td>2.4</td>
       </tr>
       
@@ -137,15 +137,15 @@
         <td>38</td>
         <td>38</td>
         <td>0</td>
-        <td>3.0</td>
+        <td>3.5</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#73af002194c9dffb4ebb4bd00e55be2aac8a2742" class="src_link" title="print_test.rb">print_test.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>159</td>
-        <td>66</td>
-        <td>66</td>
+        <td>191</td>
+        <td>78</td>
+        <td>78</td>
         <td>0</td>
         <td>1.2</td>
       </tr>
@@ -965,11 +965,11 @@
         <div class="source_table" id="acf475330929b01127134568350fdbfe1c7bfb1f">
   <div class="header">
     <h3>game.rb</h3>
-    <h4><span class="yellow">86.67 %</span> covered</h4>
+    <h4><span class="yellow">84.78 %</span> covered</h4>
     <div>
-      <b>45</b> relevant lines. 
+      <b>46</b> relevant lines. 
       <span class="green"><b>39</b> lines covered</span> and
-      <span class="red"><b>6</b> lines missed.</span>
+      <span class="red"><b>7</b> lines missed.</span>
     </div>
   </div>
   
@@ -1189,226 +1189,232 @@
         <li class="missed" data-hits="0" data-linenumber="36">
           
           
-          <code class="ruby">      puts &quot;Rubyist ##{num_miners} starting in #{@city_array[miner.current_city].name}.&quot;</code>
+          <code class="ruby">      print &quot;Rubyist ##{num_miners} starting in &quot;</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="37">
           
           
-          <code class="ruby">      days = game_loop(miner, @num_turns, @printer, @city_array)</code>
+          <code class="ruby">      puts &quot;#{@city_array[miner.current_city].name}.&quot;</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="38">
           
           
-          <code class="ruby">      @printer.print_trip([miner.rubies, miner.fake_rubies], days, num_miners)</code>
+          <code class="ruby">      days = game_loop(miner, @num_turns, @printer, @city_array)</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="39">
           
           
-          <code class="ruby">      num_miners += 1</code>
+          <code class="ruby">      @printer.print_trip([miner.rubies, miner.fake_rubies], days, num_miners)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="40">
+        <li class="missed" data-hits="0" data-linenumber="40">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">      num_miners += 1</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="41">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="42">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="43">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="43">
+        <li class="covered" data-hits="1" data-linenumber="44">
           <span class="hits">1</span>
           
           <code class="ruby">  def game_loop(miner, num_turns, printer, city_array)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="44">
+        <li class="covered" data-hits="2" data-linenumber="45">
           <span class="hits">2</span>
           
           <code class="ruby">    turns_taken = 0</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="45">
+        <li class="covered" data-hits="2" data-linenumber="46">
           <span class="hits">2</span>
           
           <code class="ruby">    days = 1</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="46">
+        <li class="covered" data-hits="2" data-linenumber="47">
           <span class="hits">2</span>
           
-          <code class="ruby">      while turns_taken &lt; num_turns</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="47">
-          <span class="hits">3</span>
-          
-          <code class="ruby">        rubies = one_day(miner, city_array, printer)</code>
+          <code class="ruby">    while turns_taken &lt; num_turns</code>
         </li>
       
         <li class="covered" data-hits="3" data-linenumber="48">
           <span class="hits">3</span>
           
-          <code class="ruby">        if rubies.sum.zero?</code>
+          <code class="ruby">      rubies = one_day(miner, city_array, printer)</code>
         </li>
       
         <li class="covered" data-hits="3" data-linenumber="49">
           <span class="hits">3</span>
           
-          <code class="ruby">          turns_taken += 1</code>
+          <code class="ruby">      if rubies.sum.zero?</code>
         </li>
       
         <li class="covered" data-hits="3" data-linenumber="50">
           <span class="hits">3</span>
           
-          <code class="ruby">          break if turns_taken == num_turns</code>
+          <code class="ruby">        turns_taken += 1</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="51">
+        <li class="covered" data-hits="3" data-linenumber="51">
+          <span class="hits">3</span>
+          
+          <code class="ruby">        break if turns_taken == num_turns</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="52">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="52">
+        <li class="covered" data-hits="1" data-linenumber="53">
           <span class="hits">1</span>
           
-          <code class="ruby">          change_cities(miner, city_array)</code>
+          <code class="ruby">        change_cities(miner, city_array)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="53">
-          
-          
-          <code class="ruby">        end</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="54">
-          <span class="hits">1</span>
-          
-          <code class="ruby">	days += 1</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="55">
+        <li class="never" data-hits="" data-linenumber="54">
           
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="56">
+        <li class="covered" data-hits="1" data-linenumber="55">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      days += 1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="56">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="57">
           <span class="hits">2</span>
           
           <code class="ruby">    days</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="57">
+        <li class="never" data-hits="" data-linenumber="58">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="58">
+        <li class="never" data-hits="" data-linenumber="59">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="59">
+        <li class="covered" data-hits="1" data-linenumber="60">
           <span class="hits">1</span>
           
           <code class="ruby">  def one_day(miner, city_array, printer)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="60">
+        <li class="covered" data-hits="4" data-linenumber="61">
           <span class="hits">4</span>
           
           <code class="ruby">    rubies = city_array[miner.current_city].get_rubies(@prng)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="61">
-          <span class="hits">4</span>
-          
-          <code class="ruby">    miner.increase_rubies(rubies[0],rubies[1])</code>
-        </li>
-      
         <li class="covered" data-hits="4" data-linenumber="62">
           <span class="hits">4</span>
           
-          <code class="ruby">    printer.print_day(rubies, city_array[miner.current_city].name)</code>
+          <code class="ruby">    miner.increase_rubies(rubies[0], rubies[1])</code>
         </li>
       
         <li class="covered" data-hits="4" data-linenumber="63">
           <span class="hits">4</span>
           
-          <code class="ruby">    rubies</code>
+          <code class="ruby">    printer.print_day(rubies, city_array[miner.current_city].name)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="64">
+        <li class="covered" data-hits="4" data-linenumber="64">
+          <span class="hits">4</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    rubies</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="65">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="66">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="66">
+        <li class="covered" data-hits="1" data-linenumber="67">
           <span class="hits">1</span>
           
           <code class="ruby">  def change_cities(miner, cities)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="67">
+        <li class="covered" data-hits="2" data-linenumber="68">
           <span class="hits">2</span>
           
           <code class="ruby">    old_city = miner.current_city</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="68">
+        <li class="covered" data-hits="2" data-linenumber="69">
           <span class="hits">2</span>
           
           <code class="ruby">    miner.change_city(cities[old_city].get_neighboring_city(@prng))</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="69">
+        <li class="covered" data-hits="2" data-linenumber="70">
           <span class="hits">2</span>
           
           <code class="ruby">    new_city = cities[miner.current_city].name</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="70">
+        <li class="covered" data-hits="2" data-linenumber="71">
           <span class="hits">2</span>
           
           <code class="ruby">    puts &quot;Heading from #{cities[old_city].name} to #{new_city}.&quot;</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="71">
+        <li class="covered" data-hits="2" data-linenumber="72">
           <span class="hits">2</span>
           
           <code class="ruby">    miner.current_city</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="72">
+        <li class="never" data-hits="" data-linenumber="73">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="73">
+        <li class="never" data-hits="" data-linenumber="74">
           
           
           <code class="ruby">end</code>
@@ -2606,10 +2612,10 @@
           <code class="ruby">  def one_type_is_zero?(counts)</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="14">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="14">
+          <span class="hits">5</span>
           
-          <code class="ruby">    return true if counts[0].zero? || counts[1].zero?</code>
+          <code class="ruby">    return true if (counts[0].zero? || counts[1].zero?) &amp;&amp; !counts.sum.zero?</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
@@ -2618,8 +2624,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="16">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="16">
+          <span class="hits">3</span>
           
           <code class="ruby">    false</code>
         </li>
@@ -2738,14 +2744,14 @@
           <code class="ruby">  def singular_or_plural(count, type)</code>
         </li>
       
-        <li class="covered" data-hits="19" data-linenumber="36">
-          <span class="hits">19</span>
+        <li class="covered" data-hits="21" data-linenumber="36">
+          <span class="hits">21</span>
           
           <code class="ruby">    if type == &#39;rubies&#39;</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="37">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="11" data-linenumber="37">
+          <span class="hits">11</span>
           
           <code class="ruby">      return &#39;rubies&#39; if count != 1</code>
         </li>
@@ -2768,8 +2774,8 @@
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="9" data-linenumber="41">
-          <span class="hits">9</span>
+        <li class="covered" data-hits="10" data-linenumber="41">
+          <span class="hits">10</span>
           
           <code class="ruby">    return &#39;fake rubies&#39; if count != 1</code>
         </li>
@@ -2780,8 +2786,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="43">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="43">
+          <span class="hits">4</span>
           
           <code class="ruby">    &#39;fake ruby&#39;</code>
         </li>
@@ -2804,32 +2810,32 @@
           <code class="ruby">  def print_trip(counts, days, num_miner)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="47">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="47">
+          <span class="hits">2</span>
           
           <code class="ruby">    noun1 = singular_or_plural(counts[0], &#39;rubies&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="48">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="48">
+          <span class="hits">2</span>
           
           <code class="ruby">    noun2 = singular_or_plural(counts[1], &#39;fake&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="49">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="49">
+          <span class="hits">2</span>
           
           <code class="ruby">    print &quot;After #{days} days, Rubyist #{num_miner} found:&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="50">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="50">
+          <span class="hits">2</span>
           
           <code class="ruby">    puts &quot;\n\t#{counts[0]} #{noun1}.\n\t#{counts[1]} #{noun2}.&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="51">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="51">
+          <span class="hits">2</span>
           
           <code class="ruby">    print_game_win_or_lose(counts[0])</code>
         </li>
@@ -2852,8 +2858,8 @@
           <code class="ruby">  def print_game_win_or_lose(rubies)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="55">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="8" data-linenumber="55">
+          <span class="hits">8</span>
           
           <code class="ruby">    case rubies</code>
         </li>
@@ -2876,8 +2882,8 @@
           <code class="ruby">    when 1..9</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="59">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="4" data-linenumber="59">
+          <span class="hits">4</span>
           
           <code class="ruby">      puts &#39;Going home sad.&#39;</code>
         </li>
@@ -2888,8 +2894,8 @@
           <code class="ruby">    else</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="61">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="61">
+          <span class="hits">3</span>
           
           <code class="ruby">      puts &#39;Going home victorious!&#39;</code>
         </li>
@@ -2922,8 +2928,8 @@
     <h3>print_test.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>66</b> relevant lines. 
-      <span class="green"><b>66</b> lines covered</span> and
+      <b>78</b> relevant lines. 
+      <span class="green"><b>78</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -2982,451 +2988,451 @@
         <li class="never" data-hits="" data-linenumber="9">
           
           
-          <code class="ruby">	# Tests if returns true if one is zero</code>
+          <code class="ruby">	# 		 x[0] and x[1] are both zero</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="10">
           
-          <code class="ruby">	def test_one_element_is_zero</code>
+          
+          <code class="ruby">	# Tests if returns true if one element is zero</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
-          <code class="ruby">		p = Print.new</code>
+          <code class="ruby">	def test_one_element_is_zero</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
-          <code class="ruby">		assert(p.one_type_is_zero?([1,0]))</code>
+          <code class="ruby">		p = Print.new</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="13">
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">	end</code>
+          <code class="ruby">		assert(p.one_type_is_zero?([1,0]))</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
           
           
-          <code class="ruby">	</code>
+          <code class="ruby">	end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
           
           
-          <code class="ruby">	# Tests if returns false if both are not zero</code>
+          <code class="ruby">	</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="16">
           
-          <code class="ruby">	def test_neither_element_is_zero</code>
+          
+          <code class="ruby">	# Tests if returns false if both elements are not zero</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
-          <code class="ruby">		p = Print.new</code>
+          <code class="ruby">	def test_neither_element_is_zero</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="18">
           <span class="hits">1</span>
           
-          <code class="ruby">		refute(p.one_type_is_zero?([1,1]))</code>
+          <code class="ruby">		p = Print.new</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">	end</code>
+          <code class="ruby">		refute(p.one_type_is_zero?([1,1]))</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="20">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">	end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="21">
           
           
-          <code class="ruby">	# UNIT TESTS FOR METHOD print_one_type(x, y)</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="22">
           
           
-          <code class="ruby">	# Equivalence classes:</code>
+          <code class="ruby">	# Tests if returns false if both elements of the array</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="23">
           
           
-          <code class="ruby">	# x[1] = 0 -&gt; prints ruby or rubies found at city y</code>
+          <code class="ruby">	# are zero</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="24">
           
           
-          <code class="ruby">	# x[0] = 0 -&gt; prints fake ruby or fake rubies found at city y</code>
+          <code class="ruby">	# EDGE CASE</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="25">
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">	# Tests if prints singular ruby noun when passed in 1 ruby and 0 fake rubies</code>
+          <code class="ruby">	def test_both_are_zero</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="26">
           <span class="hits">1</span>
           
-          <code class="ruby">	def test_print_singular_ruby</code>
+          <code class="ruby">		p = Print.new</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="27">
           <span class="hits">1</span>
           
-          <code class="ruby">		p = Print.new</code>
+          <code class="ruby">		refute(p.one_type_is_zero?([0,0]))</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="28">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="28">
           
-          <code class="ruby">		assert_output(&quot;\tFound 1 ruby in Town.\n&quot;) {p.print_one_type([1,0],&#39;Town&#39;)}</code>
+          
+          <code class="ruby">	end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="29">
           
           
-          <code class="ruby">	end</code>
+          <code class="ruby">	</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="30">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">	# UNIT TESTS FOR METHOD print_one_type(x, y)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="31">
           
           
+          <code class="ruby">	# Equivalence classes:</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="32">
+          
+          
+          <code class="ruby">	# x[1] = 0 -&gt; prints ruby or rubies found at city y</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">	# x[0] = 0 -&gt; prints fake ruby or fake rubies found at city y</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
+          <code class="ruby">	# Tests if prints singular ruby noun when passed in 1 ruby and 0 fake rubies</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="35">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def test_print_singular_ruby</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="36">
+          <span class="hits">1</span>
+          
+          <code class="ruby">		p = Print.new</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="37">
+          <span class="hits">2</span>
+          
+          <code class="ruby">		assert_output(&quot;\tFound 1 ruby in Town.\n&quot;) {p.print_one_type([1,0],&#39;Town&#39;)}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="39">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="40">
+          
+          
           <code class="ruby">	# Tests if prints plural ruby noun when passed in 2 ruby and 0 fake rubies</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="32">
+        <li class="covered" data-hits="1" data-linenumber="41">
           <span class="hits">1</span>
           
           <code class="ruby">	def test_print_plural_ruby</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="33">
+        <li class="covered" data-hits="1" data-linenumber="42">
           <span class="hits">1</span>
           
           <code class="ruby">		p = Print.new</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="34">
+        <li class="covered" data-hits="2" data-linenumber="43">
           <span class="hits">2</span>
           
           <code class="ruby">		assert_output(&quot;\tFound 2 rubies in Town.\n&quot;) {p.print_one_type([2,0],&#39;Town&#39;)}</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="35">
+        <li class="never" data-hits="" data-linenumber="44">
           
           
           <code class="ruby">	end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="36">
+        <li class="never" data-hits="" data-linenumber="45">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="37">
+        <li class="never" data-hits="" data-linenumber="46">
           
           
           <code class="ruby">	# Tests if prints singular fake ruby noun when passed in 0 ruby and 1 fake rubies</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="38">
+        <li class="covered" data-hits="1" data-linenumber="47">
           <span class="hits">1</span>
           
           <code class="ruby">	def test_print_singular_fake_ruby</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="39">
+        <li class="covered" data-hits="1" data-linenumber="48">
           <span class="hits">1</span>
           
           <code class="ruby">		p = Print.new</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="40">
+        <li class="covered" data-hits="2" data-linenumber="49">
           <span class="hits">2</span>
           
           <code class="ruby">		assert_output(&quot;\tFound 1 fake ruby in Town.\n&quot;) {p.print_one_type([0,1],&#39;Town&#39;)}</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="41">
-          
-          
-          <code class="ruby">	end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="42">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="43">
-          
-          
-          <code class="ruby">	# Tests if prints plural fake ruby noun when passed in 0 ruby and 2 fake rubies</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="44">
-          <span class="hits">1</span>
-          
-          <code class="ruby">	def test_print_plural_fake_ruby</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="45">
-          <span class="hits">1</span>
-          
-          <code class="ruby">		p = Print.new</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="46">
-          <span class="hits">2</span>
-          
-          <code class="ruby">		assert_output(&quot;\tFound 2 fake rubies in Town.\n&quot;) {p.print_one_type([0,2],&#39;Town&#39;)}</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="47">
-          
-          
-          <code class="ruby">	end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="48">
-          
-          
-          <code class="ruby">	</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="49">
-          
-          
-          <code class="ruby">	# UNIT TESTS FOR METHOD singular_or_plural(x, y)</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="50">
           
           
-          <code class="ruby">	# Equivalence classes:</code>
+          <code class="ruby">	end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="51">
           
           
-          <code class="ruby">	# y = &#39;rubies&#39; x != 1 -&gt; return &#39;rubies&#39;</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="52">
           
           
-          <code class="ruby">	# y = &#39;rubies&#39; x ==1 -&gt; return &#39;ruby&#39;</code>
+          <code class="ruby">	# Tests if prints plural fake ruby noun when passed in 0 ruby and 2 fake rubies</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="53">
-          
-          
-          <code class="ruby">	# y != &#39;rubies&#39; x != 1 -&gt; return &#39;fake rubies&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="54">
-          
-          
-          <code class="ruby">	# y != &#39;rubies&#39; x == 1 -&gt; return &#39;fake ruby&#39;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="55">
-          
-          
-          <code class="ruby">	# Tests if &#39;rubies&#39; is returned for arguments (0,&#39;rubies&#39;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="56">
+        <li class="covered" data-hits="1" data-linenumber="53">
           <span class="hits">1</span>
           
-          <code class="ruby">	def test_plural_ruby</code>
+          <code class="ruby">	def test_print_plural_fake_ruby</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="57">
+        <li class="covered" data-hits="1" data-linenumber="54">
           <span class="hits">1</span>
           
           <code class="ruby">		p = Print.new</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="58">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="55">
+          <span class="hits">2</span>
           
-          <code class="ruby">		assert_equal(&#39;rubies&#39;,p.singular_or_plural(0,&#39;rubies&#39;))</code>
+          <code class="ruby">		assert_output(&quot;\tFound 2 fake rubies in Town.\n&quot;) {p.print_one_type([0,2],&#39;Town&#39;)}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="56">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="57">
+          
+          
+          <code class="ruby">	</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="58">
+          
+          
+          <code class="ruby">	# UNIT TESTS FOR METHOD singular_or_plural(x, y)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="59">
           
           
-          <code class="ruby">	end</code>
+          <code class="ruby">	# Equivalence classes:</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="60">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">	# y = &#39;rubies&#39; x != 1 -&gt; return &#39;rubies&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="61">
           
           
-          <code class="ruby">	# Tests if &#39;ruby&#39; is returned for arguments (1,&#39;rubies&#39;)</code>
+          <code class="ruby">	# y = &#39;rubies&#39; x ==1 -&gt; return &#39;ruby&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="62">
+        <li class="never" data-hits="" data-linenumber="62">
+          
+          
+          <code class="ruby">	# y != &#39;rubies&#39; x != 1 -&gt; return &#39;fake rubies&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="63">
+          
+          
+          <code class="ruby">	# y != &#39;rubies&#39; x == 1 -&gt; return &#39;fake ruby&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="64">
+          
+          
+          <code class="ruby">	# Tests if &#39;rubies&#39; is returned for arguments (0,&#39;rubies&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="65">
           <span class="hits">1</span>
           
-          <code class="ruby">	def test_singular_ruby</code>
+          <code class="ruby">	def test_plural_ruby</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="63">
-          <span class="hits">1</span>
-          
-          <code class="ruby">		p = Print.new</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="64">
-          <span class="hits">1</span>
-          
-          <code class="ruby">		assert_equal(&#39;ruby&#39;,p.singular_or_plural(1,&#39;rubies&#39;))</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="65">
-          
-          
-          <code class="ruby">	end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="66">
-          
-          
-          <code class="ruby">	</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="67">
-          
-          
-          <code class="ruby">	# Tests if &#39;fake rubies&#39; is returned for arguments (0,&#39;fake&#39;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="68">
-          <span class="hits">1</span>
-          
-          <code class="ruby">	def test_plural_fake_ruby</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="69">
+        <li class="covered" data-hits="1" data-linenumber="66">
           <span class="hits">1</span>
           
           <code class="ruby">		p = Print.new</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="70">
+        <li class="covered" data-hits="1" data-linenumber="67">
           <span class="hits">1</span>
           
-          <code class="ruby">		assert_equal(&#39;fake rubies&#39;,p.singular_or_plural(0,&#39;fake&#39;))</code>
+          <code class="ruby">		assert_equal(&#39;rubies&#39;,p.singular_or_plural(0,&#39;rubies&#39;))</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="71">
+        <li class="never" data-hits="" data-linenumber="68">
           
           
           <code class="ruby">	end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="72">
-          
-          
-          <code class="ruby">	</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="73">
-          
-          
-          <code class="ruby">	# Tests if &#39;fake ruby&#39; is returned for arguments (1,&#39;fake&#39;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="74">
-          <span class="hits">1</span>
-          
-          <code class="ruby">	def test_singular_fake_ruby</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="75">
-          <span class="hits">1</span>
-          
-          <code class="ruby">		p = Print.new</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="76">
-          <span class="hits">1</span>
-          
-          <code class="ruby">		assert_equal(&#39;fake ruby&#39;,p.singular_or_plural(1,&#39;fake&#39;))</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="77">
-          
-          
-          <code class="ruby">	end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="78">
+        <li class="never" data-hits="" data-linenumber="69">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="79">
+        <li class="never" data-hits="" data-linenumber="70">
           
           
-          <code class="ruby">	# UNIT TESTS FOR METHOD print_both_types(x, y)</code>
+          <code class="ruby">	# Tests if &#39;ruby&#39; is returned for arguments (1,&#39;rubies&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="71">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def test_singular_ruby</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="72">
+          <span class="hits">1</span>
+          
+          <code class="ruby">		p = Print.new</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="73">
+          <span class="hits">1</span>
+          
+          <code class="ruby">		assert_equal(&#39;ruby&#39;,p.singular_or_plural(1,&#39;rubies&#39;))</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="74">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="75">
+          
+          
+          <code class="ruby">	</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="76">
+          
+          
+          <code class="ruby">	# Tests if &#39;fake rubies&#39; is returned for arguments (0,&#39;fake&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="77">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def test_plural_fake_ruby</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="78">
+          <span class="hits">1</span>
+          
+          <code class="ruby">		p = Print.new</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="79">
+          <span class="hits">1</span>
+          
+          <code class="ruby">		assert_equal(&#39;fake rubies&#39;,p.singular_or_plural(0,&#39;fake&#39;))</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="80">
           
           
-          <code class="ruby">	# prints how many rubies and fake rubies were found at city y</code>
+          <code class="ruby">	end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="81">
           
           
-          <code class="ruby">	# uses correct singular and plural nouns</code>
+          <code class="ruby">	</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="82">
           
           
-          <code class="ruby">	# Tests if correctly prints with both singular</code>
+          <code class="ruby">	# Tests if &#39;fake ruby&#39; is returned for arguments (1,&#39;fake&#39;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="83">
           <span class="hits">1</span>
           
-          <code class="ruby">	def test_print_both_singular</code>
+          <code class="ruby">	def test_singular_fake_ruby</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="84">
@@ -3435,10 +3441,10 @@
           <code class="ruby">		p = Print.new</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="85">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="85">
+          <span class="hits">1</span>
           
-          <code class="ruby">		assert_output(&quot;\tFound 1 ruby and 1 fake ruby in Town.\n&quot;) {p.print_both_types([1,1],&#39;Town&#39;)}</code>
+          <code class="ruby">		assert_equal(&#39;fake ruby&#39;,p.singular_or_plural(1,&#39;fake&#39;))</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="86">
@@ -3450,436 +3456,628 @@
         <li class="never" data-hits="" data-linenumber="87">
           
           
-          <code class="ruby">	</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="88">
           
           
+          <code class="ruby">	# UNIT TESTS FOR METHOD print_both_types(x, y)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="89">
+          
+          
+          <code class="ruby">	# prints how many rubies and fake rubies were found at city y</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="90">
+          
+          
+          <code class="ruby">	# uses correct singular and plural nouns</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="91">
+          
+          
+          <code class="ruby">	# Tests if correctly prints with both singular</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="92">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def test_print_both_singular</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="93">
+          <span class="hits">1</span>
+          
+          <code class="ruby">		p = Print.new</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="94">
+          <span class="hits">2</span>
+          
+          <code class="ruby">		assert_output(&quot;\tFound 1 ruby and 1 fake ruby in Town.\n&quot;) {p.print_both_types([1,1],&#39;Town&#39;)}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="95">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="96">
+          
+          
+          <code class="ruby">	</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="97">
+          
+          
           <code class="ruby">	# Tests if correctly prints with both plural</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="89">
+        <li class="covered" data-hits="1" data-linenumber="98">
           <span class="hits">1</span>
           
           <code class="ruby">	def test_print_both_plural</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="90">
+        <li class="covered" data-hits="1" data-linenumber="99">
           <span class="hits">1</span>
           
           <code class="ruby">		p = Print.new</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="91">
+        <li class="covered" data-hits="2" data-linenumber="100">
           <span class="hits">2</span>
           
           <code class="ruby">		assert_output(&quot;\tFound 2 rubies and 2 fake rubies in Town.\n&quot;) {p.print_both_types([2,2],&#39;Town&#39;)}</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="92">
-          
-          
-          <code class="ruby">	end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="93">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="94">
-          
-          
-          <code class="ruby">	# Tests if correctly prints one singular and one plural</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="95">
-          <span class="hits">1</span>
-          
-          <code class="ruby">	def test_print_one_singular_one_plural</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="96">
-          <span class="hits">1</span>
-          
-          <code class="ruby">		p = Print.new</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="97">
-          <span class="hits">2</span>
-          
-          <code class="ruby">		assert_output(&quot;\tFound 1 ruby and 2 fake rubies in Town.\n&quot;) {p.print_both_types([1,2],&#39;Town&#39;)}</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="98">
-          
-          
-          <code class="ruby">	end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="99">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="100">
-          
-          
-          <code class="ruby">	# UNIT TESTS FOR METHOD print_day(x , y)</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="101">
           
           
-          <code class="ruby">	# x[0] and x[1] == 0 -&gt; print found no rubies of either kind</code>
+          <code class="ruby">	end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="102">
           
           
-          <code class="ruby">	# x[0] or x[1] == 0 -&gt; print found whatever type none zero</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="103">
           
           
-          <code class="ruby">	# x[0] and x[1] != -&gt; print found some of both types</code>
+          <code class="ruby">	# Tests if correctly prints one singular and one plural</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="104">
+        <li class="covered" data-hits="1" data-linenumber="104">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">	# Test if prints no rubies of either type found if x.sum ==0</code>
+          <code class="ruby">	def test_print_one_singular_one_plural</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="105">
           <span class="hits">1</span>
           
-          <code class="ruby">	def test_found_no_rubies</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="106">
-          <span class="hits">1</span>
-          
           <code class="ruby">		p = Print.new</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="107">
+        <li class="covered" data-hits="2" data-linenumber="106">
           <span class="hits">2</span>
           
-          <code class="ruby">		assert_output(&quot;\tFound no rubies or fake rubies in Town.\n&quot;) {p.print_day([0,0],&#39;Town&#39;)}</code>
+          <code class="ruby">		assert_output(&quot;\tFound 1 ruby and 2 fake rubies in Town.\n&quot;) {p.print_both_types([1,2],&#39;Town&#39;)}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="107">
+          
+          
+          <code class="ruby">	end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="108">
           
           
-          <code class="ruby">	end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="109">
           
           
-          <code class="ruby">	</code>
+          <code class="ruby">	# UNIT TESTS FOR METHOD print_day(x , y)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="110">
           
           
-          <code class="ruby">	# Tests if correctly prints found some of both types of x[0]&gt;0 and x[1]&gt;0</code>
+          <code class="ruby">	# x[0] and x[1] == 0 -&gt; print found no rubies of either kind</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="111">
+        <li class="never" data-hits="" data-linenumber="111">
+          
+          
+          <code class="ruby">	# x[0] or x[1] == 0 -&gt; print found whatever type none zero</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="112">
+          
+          
+          <code class="ruby">	# x[0] and x[1] != -&gt; print found some of both types</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="113">
+          
+          
+          <code class="ruby">	# Test if prints no rubies of either type found if x.sum ==0</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="114">
           <span class="hits">1</span>
           
-          <code class="ruby">	def test_print_some_both_types</code>
+          <code class="ruby">	def test_found_no_rubies</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="112">
+        <li class="covered" data-hits="1" data-linenumber="115">
           <span class="hits">1</span>
           
           <code class="ruby">		p = Print.new</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="113">
+        <li class="covered" data-hits="2" data-linenumber="116">
           <span class="hits">2</span>
           
-          <code class="ruby">		assert_output(&quot;\tFound 1 ruby and 2 fake rubies in Town.\n&quot;) {p.print_day([1,2],&#39;Town&#39;)}</code>
+          <code class="ruby">		assert_output(&quot;\tFound no rubies or fake rubies in Town.\n&quot;) {p.print_day([0,0],&#39;Town&#39;)}</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="114">
+        <li class="never" data-hits="" data-linenumber="117">
           
           
           <code class="ruby">	end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="115">
+        <li class="never" data-hits="" data-linenumber="118">
           
           
           <code class="ruby">	</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="116">
+        <li class="never" data-hits="" data-linenumber="119">
           
           
-          <code class="ruby">	# Tests if correctly prints just found rubies if x[1]==1 and x[0]==0</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="117">
-          <span class="hits">1</span>
-          
-          <code class="ruby">	def test_print_one_type</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="118">
-          <span class="hits">1</span>
-          
-          <code class="ruby">		p = Print.new</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="119">
-          <span class="hits">2</span>
-          
-          <code class="ruby">		assert_output(&quot;\tFound 1 ruby in Town.\n&quot;) {p.print_day([1,0],&#39;Town&#39;)}</code>
+          <code class="ruby">	# Tests if correctly prints found some of both types when</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="120">
           
           
-          <code class="ruby">	end</code>
+          <code class="ruby">	# there is 1 ruby and 2 fake rubies</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="121">
+        <li class="covered" data-hits="1" data-linenumber="121">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">	def test_print_some_both_types</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="122">
+        <li class="covered" data-hits="1" data-linenumber="122">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">	# UNIT TESTS FOR METHOD print_game_win_or_lose(x)</code>
+          <code class="ruby">		p = Print.new</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="123">
+        <li class="covered" data-hits="2" data-linenumber="123">
+          <span class="hits">2</span>
           
-          
-          <code class="ruby">	# Equivalence classes:</code>
+          <code class="ruby">		assert_output(&quot;\tFound 1 ruby and 2 fake rubies in Town.\n&quot;) {p.print_day([1,2],&#39;Town&#39;)}</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="124">
           
           
-          <code class="ruby">	# x = 0 -&gt; print &#39;Going home empty-handed.&#39;</code>
+          <code class="ruby">	end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="125">
           
           
-          <code class="ruby">	# x = 1..9 -&gt; print &#39;Going home sad.&#39;</code>
+          <code class="ruby">	</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="126">
           
           
-          <code class="ruby">	# x = 10...infinity -&gt; print &#39;Going home victorious.&#39;</code>
+          <code class="ruby">	# Tests if correctly prints just found rubies if x[1]==1 and x[0]==0</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="127">
+        <li class="covered" data-hits="1" data-linenumber="127">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">	# Tests if prints empty-handed if x is 0</code>
+          <code class="ruby">	def test_print_one_type</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="128">
           <span class="hits">1</span>
           
-          <code class="ruby">	def test_empty_handed</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="129">
-          <span class="hits">1</span>
-          
           <code class="ruby">		p = Print.new</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="130">
+        <li class="covered" data-hits="2" data-linenumber="129">
           <span class="hits">2</span>
           
-          <code class="ruby">		assert_output(&quot;Going home empty-handed.\n&quot;) {p.print_game_win_or_lose(0)}</code>
+          <code class="ruby">		assert_output(&quot;\tFound 1 ruby in Town.\n&quot;) {p.print_day([1,0],&#39;Town&#39;)}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="130">
+          
+          
+          <code class="ruby">	end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="131">
           
           
-          <code class="ruby">	end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="132">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">	# UNIT TESTS FOR METHOD print_game_win_or_lose(x)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="133">
           
           
-          <code class="ruby">	# Tests if prints sad if x is 3</code>
+          <code class="ruby">	# Equivalence classes:</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="134">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="134">
           
-          <code class="ruby">	def test_sad</code>
+          
+          <code class="ruby">	# x = 0 -&gt; print &#39;Going home empty-handed.&#39;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="135">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="135">
           
-          <code class="ruby">		p = Print.new</code>
+          
+          <code class="ruby">	# x = 1..9 -&gt; print &#39;Going home sad.&#39;</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="136">
-          <span class="hits">2</span>
+        <li class="never" data-hits="" data-linenumber="136">
           
-          <code class="ruby">		assert_output(&quot;Going home sad.\n&quot;) {p.print_game_win_or_lose(3)}</code>
+          
+          <code class="ruby">	# x = 10..infinity -&gt; print &#39;Going home victorious.&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="137">
           
           
-          <code class="ruby">	end</code>
+          <code class="ruby">	# Tests if prints empty-handed if x is 0</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="138">
-          
-          
-          <code class="ruby">	</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="139">
-          
-          
-          <code class="ruby">	# Tests if prints victorious if x is 10</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="140">
+        <li class="covered" data-hits="1" data-linenumber="138">
           <span class="hits">1</span>
           
-          <code class="ruby">	def test_barely_victorious</code>
+          <code class="ruby">	def test_empty_handed</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="141">
+        <li class="covered" data-hits="1" data-linenumber="139">
           <span class="hits">1</span>
           
           <code class="ruby">		p = Print.new</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="142">
+        <li class="covered" data-hits="2" data-linenumber="140">
           <span class="hits">2</span>
           
-          <code class="ruby">		assert_output(&quot;Going home victorious!\n&quot;) {p.print_game_win_or_lose(10)}</code>
+          <code class="ruby">		assert_output(&quot;Going home empty-handed.\n&quot;) {p.print_game_win_or_lose(0)}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="141">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="142">
+          
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="143">
           
           
-          <code class="ruby">	end</code>
+          <code class="ruby">	# Tests if prints sad if x is 3</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="144">
-          
-          
-          <code class="ruby">	</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="145">
-          
-          
-          <code class="ruby">	# Tests if prints victorious if x is 15</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="146">
+        <li class="covered" data-hits="1" data-linenumber="144">
           <span class="hits">1</span>
           
-          <code class="ruby">	def test_victorious</code>
+          <code class="ruby">	def test_sad</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="147">
+        <li class="covered" data-hits="1" data-linenumber="145">
           <span class="hits">1</span>
           
           <code class="ruby">		p = Print.new</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="148">
+        <li class="covered" data-hits="2" data-linenumber="146">
           <span class="hits">2</span>
           
-          <code class="ruby">		assert_output(&quot;Going home victorious!\n&quot;) {p.print_game_win_or_lose(16)}</code>
+          <code class="ruby">		assert_output(&quot;Going home sad.\n&quot;) {p.print_game_win_or_lose(3)}</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="149">
+        <li class="never" data-hits="" data-linenumber="147">
           
           
           <code class="ruby">	end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="150">
+        <li class="never" data-hits="" data-linenumber="148">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="151">
+        <li class="never" data-hits="" data-linenumber="149">
           
           
-          <code class="ruby">	# UNIT TESTS FOR METHOD print_trip(x)</code>
+          <code class="ruby">	# Tests if prints sad if x is 1 which is an</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="152">
+        <li class="never" data-hits="" data-linenumber="150">
           
           
-          <code class="ruby"> 	# prints out results of miner&#39;s trip</code>
+          <code class="ruby">	# equivalence class boundary</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="153">
-          
-          
-          <code class="ruby">	# Tests if prints out correctly</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="154">
+        <li class="covered" data-hits="1" data-linenumber="151">
           <span class="hits">1</span>
           
-          <code class="ruby">        def test_trip</code>
+          <code class="ruby">	def test_sad_low_end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="155">
+        <li class="covered" data-hits="1" data-linenumber="152">
           <span class="hits">1</span>
           
-          <code class="ruby">                p = Print.new</code>
+          <code class="ruby">		p = Print.new</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="156">
+        <li class="covered" data-hits="2" data-linenumber="153">
           <span class="hits">2</span>
           
-          <code class="ruby">                assert_output(&quot;After 23 days, Rubyist 1 found:\n\t5 rubies.\n\t7 fake rubies.\nGoing home sad.\n&quot;) {p.print_trip([5,7],23,1)}</code>
+          <code class="ruby">		assert_output(&quot;Going home sad.\n&quot;) {p.print_game_win_or_lose(1)}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="154">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="155">
+          
+          
+          <code class="ruby">	</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="156">
+          
+          
+          <code class="ruby">	# Tests if prints sad if x is 9 which is an</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="157">
           
           
-          <code class="ruby">        end</code>
+          <code class="ruby">	# equivalence class boundary</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="158">
+        <li class="covered" data-hits="1" data-linenumber="158">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def test_sad_high_end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="159">
+          <span class="hits">1</span>
+          
+          <code class="ruby">		p = Print.new</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="160">
+          <span class="hits">2</span>
+          
+          <code class="ruby">		assert_output(&quot;Going home sad.\n&quot;) {p.print_game_win_or_lose(9)}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="161">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="162">
+          
+          
+          <code class="ruby">	</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="163">
+          
+          
+          <code class="ruby">	# Tests if prints victorious if x is 10 which is an</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="164">
+          
+          
+          <code class="ruby">	# equivalence class boundary</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="165">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def test_barely_victorious</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="166">
+          <span class="hits">1</span>
+          
+          <code class="ruby">		p = Print.new</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="167">
+          <span class="hits">2</span>
+          
+          <code class="ruby">		assert_output(&quot;Going home victorious!\n&quot;) {p.print_game_win_or_lose(10)}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="168">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="169">
+          
+          
+          <code class="ruby">	</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="170">
+          
+          
+          <code class="ruby">	# Tests if prints victorious if x is 15</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="171">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def test_victorious</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="172">
+          <span class="hits">1</span>
+          
+          <code class="ruby">		p = Print.new</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="173">
+          <span class="hits">2</span>
+          
+          <code class="ruby">		assert_output(&quot;Going home victorious!\n&quot;) {p.print_game_win_or_lose(16)}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="174">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="175">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="159">
+        <li class="never" data-hits="" data-linenumber="176">
+          
+          
+          <code class="ruby">	# UNIT TESTS FOR METHOD print_trip(x)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="177">
+          
+          
+          <code class="ruby"> 	# prints out results of miner&#39;s trip</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="178">
+          
+          
+          <code class="ruby">	# Tests if prints out correctly when rubies = 5 and fake rubies = 7</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="179">
+          
+          
+          <code class="ruby">	# should print Going home sad as well</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="180">
+          <span class="hits">1</span>
+          
+          <code class="ruby">        def test_trip_plural_both_types</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="181">
+          <span class="hits">1</span>
+          
+          <code class="ruby">                p = Print.new</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="182">
+          <span class="hits">2</span>
+          
+          <code class="ruby">                assert_output(&quot;After 23 days, Rubyist 1 found:\n\t5 rubies.\n\t7 fake rubies.\nGoing home sad.\n&quot;) {p.print_trip([5,7],23,1)}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="183">
+          
+          
+          <code class="ruby">        end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="184">
+          
+          
+          <code class="ruby">        </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="185">
+          
+          
+          <code class="ruby">	# Tests if print correctly when rubies = 10 and fake rubies = 1</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="186">
+          
+          
+          <code class="ruby">	# should print out that plus going home victorious!</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="187">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def test_trip_plural_rubies_singular_fakes</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="188">
+          <span class="hits">1</span>
+          
+          <code class="ruby">                p = Print.new</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="189">
+          <span class="hits">2</span>
+          
+          <code class="ruby">                assert_output(&quot;After 1 days, Rubyist 2 found:\n\t10 rubies.\n\t1 fake ruby.\nGoing home victorious!\n&quot;) {p.print_trip([10,1],1,2)}</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="190">
+          
+          
+          <code class="ruby">        end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="191">
           
           
           <code class="ruby">end</code>

@@ -11,7 +11,7 @@ class Print
   end
 
   def one_type_is_zero?(counts)
-    return true if counts[0].zero? || counts[1].zero?
+    return true if (counts[0].zero? || counts[1].zero?) && !counts.sum.zero?
 
     false
   end
