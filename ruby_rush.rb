@@ -1,4 +1,5 @@
 require_relative 'game'
+require_relative 'check'
 
 c = Check.new
 if c.check_arguments(ARGV)

@@ -40,12 +40,14 @@ class Miner_test < Minitest::Test
 	# UNIT TESTS FOR METHOD change_city(x)
 	# Equivalence classes:
 	# x = 0...infinity -> current_city = x
+	# Tests if successfully changes city of miner to 1
 	def test_normal_change
 		m = Miner.new(0)
 		m.change_city(1)
 		assert_equal(1,m.current_city)
 	end
 
+	# Tests if city of miner can be changed twice successfully
 	def test_change_twice
 		m = Miner.new(0)
 		m.change_city(1)

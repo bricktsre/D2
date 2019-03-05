@@ -28,12 +28,14 @@ class Check_test < Minitest::Test
 
 	# Tests if returns true if an argument is a string that can be converted to
 	# an integer
+	# EDGE CASE
 	def test_string_argument
 		c = Check.new
 		assert c.check_arguments([1,'1',1])
 	end
 
 	# Tests if returns true if an argument is a double
+	# EDGE CASE
 	def test_double_argument
 		c = Check.new
 		assert c.check_arguments([1,1.2,1])
